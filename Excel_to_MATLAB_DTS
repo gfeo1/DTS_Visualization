@@ -1,0 +1,17 @@
+A4 = [];
+for c = 0:68
+ 
+    f = num2str(c);
+    disp(f);
+    filenameprefix = 'C:\Users\gfeo1\Documents\MATLAB\Heaven1\XLS2\Vaquero_Ardantz_502DTS_';
+    filenamesuffix = '.xlsx';
+    filename = strcat( filenameprefix,f,filenamesuffix);
+    
+    F1 = xlsread(filename);
+    
+    A4 = [A4(:,:) F1];
+    
+        
+    
+ 
+end
